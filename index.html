@@ -8,7 +8,7 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Google Fonts (Montserrat for modern premium feel) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -178,34 +178,36 @@
       transition: transform 0.3s ease;
     }
 
-    /* Button specific styles and glows */
-    .btn-new {
-      box-shadow: 0 0 15px rgba(0, 229, 255, 0.05);
+    /* Dynamic buttons glow styling */
+    
+    .btn-custom-0 {
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
     }
-    .btn-new:hover {
-      border-color: rgba(0, 229, 255, 0.6);
-      box-shadow: 0 0 25px rgba(0, 229, 255, 0.25);
-      background: rgba(0, 229, 255, 0.05);
+    .btn-custom-0:hover {
+      border-color: #00e5ff;
+      box-shadow: 0 0 25px #00e5ff40;
+      background: #00e5ff10;
       transform: translateY(-3px);
     }
-    .btn-new:hover i {
+    .btn-custom-0:hover i {
       transform: translateX(5px);
       color: #00e5ff;
     }
-
-    .btn-used {
+    
+    .btn-custom-1 {
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
     }
-    .btn-used:hover {
-      border-color: rgba(255, 255, 255, 0.5);
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
-      background: rgba(255, 255, 255, 0.05);
+    .btn-custom-1:hover {
+      border-color: #ffffff;
+      box-shadow: 0 0 25px #ffffff40;
+      background: #ffffff10;
       transform: translateY(-3px);
     }
-    .btn-used:hover i {
+    .btn-custom-1:hover i {
       transform: translateX(5px);
       color: #ffffff;
     }
+    
 
     /* FOOTER */
     .portal-footer {
@@ -258,13 +260,12 @@
 
   <div class="portal-container">
     <!-- BRANDING -->
-    <h1 class="brand-title">Aurum Autos</h1>
-    <p class="brand-subtitle">Car Portfolio</p>
+    <h1 class="brand-title">Aurum Autos</h1><p class="brand-subtitle">Car Portfolio</p>
 
     <!-- AVATAR -->
     <div class="avatar-wrapper">
       <div class="avatar-ring"></div>
-      <img src="https://res.cloudinary.com/dbxa0pozm/image/upload/v1775709817/Luis_tarjeta_gd45h6.jpg" alt="Luis" class="avatar-img">
+      <img src="https://res.cloudinary.com/dbxa0pozm/image/upload/f_auto,q_auto/v1775709817/Luis_tarjeta_gd45h6.jpg" alt="Luis" class="avatar-img">
     </div>
 
     <!-- PRESENTATION -->
@@ -273,17 +274,17 @@
 
     <!-- BUTTONS STACK -->
     <div class="links-stack">
-      <!-- Button 1: Stellantis -->
-      <a href="https://lfmtz.github.io/landing-stellantis/" class="portal-btn btn-new">
+      
+      <a href="https://lfmtz.github.io/landing-stellantis/" class="portal-btn btn-custom-0">
         <span>Nuevos y Autos Demo</span>
-        <i class="fa-solid fa-arrow-right-long"></i>
+        <i class="fa-solid fa-car"></i>
       </a>
-
-      <!-- Button 2: Seminuevos -->
-      <a href="https://lfmtz.github.io/catalogo-seminuevos/" class="portal-btn btn-used">
+    
+      <a href="https://lfmtz.github.io/catalogo-seminuevos/" class="portal-btn btn-custom-1">
         <span>Autos Seminuevos</span>
-        <i class="fa-solid fa-arrow-right-long"></i>
+        <i class="fa-solid fa-car"></i>
       </a>
+    
     </div>
 
     <!-- FOOTER -->
