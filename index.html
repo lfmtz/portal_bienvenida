@@ -13,6 +13,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Optimización de Carga Inmediata para Cloudinary -->
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link rel="dns-prefetch" href="https://res.cloudinary.com">
+  <link rel="preload" as="image" href="https://res.cloudinary.com/x15obxmg/image/upload/f_auto,q_auto,w_450/v1789774982/luis_foto.jpg" fetchpriority="high">
+
   <style>
     :root {
       --bg-dark: #050811;
@@ -554,9 +559,15 @@
         <div class="avatar-glow"></div>
         <div class="avatar-circle">
           <img 
-            src="imagenes/luis_foto.jpg" 
+            src="https://res.cloudinary.com/x15obxmg/image/upload/f_auto,q_auto,w_450/v1789774982/luis_foto.jpg" 
+            srcset="https://res.cloudinary.com/x15obxmg/image/upload/f_auto,q_auto,w_320/v1789774982/luis_foto.jpg 320w,
+                    https://res.cloudinary.com/x15obxmg/image/upload/f_auto,q_auto,w_450/v1789774982/luis_foto.jpg 450w,
+                    https://res.cloudinary.com/x15obxmg/image/upload/f_auto,q_auto,w_600/v1789774982/luis_foto.jpg 600w"
+            sizes="(max-width: 480px) 155px, 155px"
             alt="Luis Fernando Martínez" 
             class="avatar-img"
+            loading="eager"
+            fetchpriority="high"
           >
         </div>
         <!-- Badge de Disponibilidad -->
